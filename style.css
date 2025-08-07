@@ -1019,3 +1019,46 @@ body {
     justify-content: center;
   }
 }
+
+
+
+
+
+
+
+
+
+/* timer */
+ 
+.time-box {
+    background: #111;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.time-box span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.time-box small {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
