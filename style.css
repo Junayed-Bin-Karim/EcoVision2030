@@ -1061,4 +1061,217 @@ body {
 
 
 
+/* Typography Improvements Event Overview
+ */
+.text-content {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    color: #000; /* Full black text */
+    line-height: 1.7;
+    text-align: justify;
+}
 
+.text-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.text-content .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.text-content .highlight {
+    background-color: #f0f8f0;
+    padding: 1rem;
+    border-left: 4px solid var(--primary-color);
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Feature List Styling */
+.feature-list {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.feature-list .icon {
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .text-content {
+        text-align: left;
+        padding: 0 1rem;
+    }
+    
+    .text-content p {
+        font-size: 1rem;
+    }
+    
+    .text-content .lead {
+        font-size: 1.1rem;
+    }
+    
+    .feature-list li {
+        font-size: 1rem;
+    }
+    
+    .highlight {
+        margin: 1rem -1rem;
+        padding: 1rem;
+    }
+}
+
+/* Image Responsiveness */
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+    }
+    
+    .image-content {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    .section-image {
+        max-height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+/* About Section Styling */
+#about .text-content {
+    color: #000;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#about .intro-text {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.mission-box {
+    background-color: rgba(46, 125, 50, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.mission-box h3 {
+    color: var(--primary-dark);
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+}
+
+.eco-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.eco-features li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0.5rem 0;
+}
+
+.feature-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature-text {
+    flex-grow: 1;
+}
+
+.vision-statement {
+    margin-top: 2.5rem;
+}
+
+.vision-statement blockquote {
+    font-style: italic;
+    color: var(--primary-dark);
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.vision-statement blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--primary-light);
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    line-height: 1;
+    font-family: serif;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #about .text-content {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    #about .intro-text {
+        font-size: 1.05rem;
+    }
+    
+    .mission-box {
+        padding: 1rem;
+        margin: 1.5rem -0.5rem;
+    }
+    
+    .eco-features li {
+        margin-bottom: 0.8rem;
+    }
+    
+    .vision-statement blockquote {
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 0 -0.5rem;
+    }
+    
+    .vision-statement blockquote::before {
+        font-size: 3rem;
+        left: 5px;
+        top: -5px;
+    }
+}
